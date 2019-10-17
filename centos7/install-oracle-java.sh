@@ -12,7 +12,8 @@ if [ "$JAVA_PACKAGE" = "jdk" ]; then
   JRE_RM_PATH="$JRE_RM_PATH/jre"
 fi
 
-curl -SL -o /tmp/${JAVA_FILE} -jkSLH "Cookie: oraclelicense=accept-securebackup-cookie;" http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION}u${JAVA_UPDATE}-b${JAVA_BUILD}/$DIR/${JAVA_FILE} \
+curl -SL -o /tmp/${JAVA_FILE} -jkSLH "Cookie: oraclelicense=accept-securebackup-cookie;" https://download.oracle.com/otn/java/jdk/${JAVA_VERSION}u${JAVA_UPDATE}-b${JAVA_BUILD}/$DIR/${JAVA_FILE} \
+  -F "AuthParam=1571293533_26cd5776050b7306a8bd0ac8c5663d2c" \
   && yum localinstall -y /tmp/${JAVA_FILE} \
   && rm -rf /tmp/${JAVA_FILE} \
   && rm -rf $JAVA_HOME/*src.zip \
