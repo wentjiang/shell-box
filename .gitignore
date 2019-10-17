@@ -28,6 +28,3 @@ hs_err_pid*
 leetcode.iml
 /.idea/
 .gitignore
-bin/
-centos7/
-docker/
