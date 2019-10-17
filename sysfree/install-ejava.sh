@@ -1,7 +1,5 @@
 #! /bin/bash
 
-# MAINTAINER Ma Qian<maqian258@gmail.com>
-
 JAVACMD=`type java |awk '{print $(NF)}'`
 $JAVACMD -version > /dev/null 2>&1
 if [ $? -ne 0 ]; then
