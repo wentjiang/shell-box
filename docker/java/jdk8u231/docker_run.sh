@@ -1,0 +1,1 @@
+docker run --name docker_jdk wentjiang:jdk8u231
