@@ -25,7 +25,7 @@ helm install ops-prometheus-adapter stable/prometheus-adapter --values adapter.y
 查看是否采集成功
 ```
 kubectl get --raw /apis/custom.metrics.k8s.io/v1beta1
-kubectl get --raw "/apis/custom.metrics.k8s.io/v1beta1/namespaces/local/services/*/custom_value"
+kubectl get --raw "/apis/custom.metrics.k8s.io/v1beta1/namespaces/local/pods/*/custom_value"
 ```
 
 修改rule

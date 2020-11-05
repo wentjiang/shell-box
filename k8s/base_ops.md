@@ -14,3 +14,8 @@ kubectl --namespace ops port-forward svc/ops-prometheus-kube-promet-prometheus 9
 ```
 kubectl logs -f prometheus-test-sm
 ```
+
+查看某个标签的pod
+```
+kubectl --namespace monitoring get pods -l "release=ops-prometheus"
+```
