@@ -1,7 +1,7 @@
 # CentOS with JDK 8
 
 # build a new image with basic  centos
-FROM wentjiang:jdk8
+FROM wentjiang:jdk8u231
 # who is the author
 MAINTAINER wentjiang
 
